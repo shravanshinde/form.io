@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <div class="container">
+        <div class="title">
+            Registration
+        </div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">
+                       First Name 
+                    </span>
+                    <input type="text" name="firstname"
+                    placeholder="enter your name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Last Name 
+                    </span>
+                    <input type="text" name="lastname"
+                    placeholder="enter your name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       email
+                    </span>
+                    <input type="email"
+                    placeholder="enter your email" required
+                    >
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Phone Number
+                    </span>
+                    <input type="tel" name="phone"
+                    placeholder="enter your phone number" pattern="[0-9/{4}-[0-9]{3}-[0-9]{3}" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Birthday 
+                    </span>
+                    <input type="date" name="dob"
+                    placeholder="date" max="2002-01-01" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Address 
+                    </span>
+                    <textarea type="address" name="address"
+                    placeholder="enter your address" required>
+                    </textarea>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Year Of Graduation
+                    </span>
+                    <input type="number" name="graduation"
+                     placeholder="year of graduation" min="2018" max="2021" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Percentage
+                    </span>
+                    <input type="number" name="percentage"
+                    min="0" max="100" step="10" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Resume 
+                    </span>
+                    <input type="file"
+                    required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Education Information 
+                    </span>
+                    
+                    <select class="select">
+                      <optgroup label="bachelors">
+                        <option>btech</option>
+                        <option>be</option>
+                        <option>bsc</option>
+                      </optgroup>
+                      <optgroup label="masters">
+                        <option>mtech</option>
+                        <option>me</option>
+                        <option>msc</option>
+                      </optgroup>
+                    </select>
+                    
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Gender
+                    </span>
+                    <select class="select">
+                        <optgroup label="">
+                          <option selected disabled>male</option>
+                          <option>female</option>
+                        </optgroup>
+              
+                        <option>others</option>
+                      </select>   
+                </div>
+
+                <div class="input-box">
+                    <span class="details">
+                       Degree Name 
+                    </span>
+                    <input type="text" name="degree"
+                    placeholder="enter your Degree name" required>
+                </div>
+
+                <div class="box">
+                    <span class="details">
+                       Preference:
+                    </span> 
+               
+                    <input type="checkbox" class="inline" name="course_name" />Web
+                    <input type="checkbox" class="inline" name="course_name" />DSA
+                </div>
+
+                <div class="box">
+                    <span class="details"
+                    >
+                       Choose:
+                    </span> 
+                    <input type="radio" class="inline" name="course_type" />Fundamentals
+                    <input type="radio" class="inline" name="course_type" />Advanced
+                    
+                </div>
+            </div>
+
+            <div class="button" style="margin-top:30px;">
+                <input type="submit" />
+                <input type="reset" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>   
